@@ -44,7 +44,7 @@ class DataImport implements ToCollection
             $firstRow = $rows[0];
             $counter = 1; 
           
-            ini_set('max_execution_time', 300);
+            ini_set('max_execution_time',0);
          
                 foreach($vehicles as $vehicle){  
 
