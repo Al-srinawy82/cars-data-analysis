@@ -29,7 +29,11 @@ class DataImport implements ToCollection
 
     public function collection(Collection $rows)
     {
-        
+
+        try {
+            
+            
+             
         $year  = DB::table('years')->select('id', 'name');
         $month = DB::table('months')->select('id', 'name');
         $day = DB::table('days')->select('id', 'name');
@@ -218,6 +222,12 @@ class DataImport implements ToCollection
                     // ]);
                 }
                 // dd('out');
+
+
+        } catch (\Throwable $th) {
+            return \redirect()->back()->with('message', 'Please check your excel format or file type');
+        }
+       
     }
 
 }

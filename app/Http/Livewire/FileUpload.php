@@ -7,6 +7,8 @@ use Livewire\Component;
 
 use App\Imports\UsersImport;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Imports\DataImport;
+
 
 class FileUpload extends Component
 {
@@ -16,6 +18,15 @@ class FileUpload extends Component
 
     public function save(){
 
+        $this->validate([
+            'excel' => 'required', // 1MB Max
+        ],['excel.required'=>'please upload your formatted excel file']);
+
+
+        Excel::import(new DataImport, $this->excel);
+
+
+        $this->excel = null;
     
     }
 
