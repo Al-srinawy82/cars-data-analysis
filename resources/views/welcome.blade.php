@@ -16,9 +16,15 @@
                             <div class="card knowledge-base-bg white">
                                 <div class="card-content">
                                     <div class="card-body p-sm-4 p-2">
-                                        <h1 class="white">Somthing about the system</h1>
+                                        <h1 class="">
+                                        Cars 
+                                        <br>
+                                        analytics
+                                        </h1>
                                         <p class="card-text mb-2">
-                                            Somthing about the systemSomthing about the systemSomthing about the system
+                                        
+                                        Objects classification
+                                            <!-- Somthing about the systemSomthing about the systemSomthing about the system -->
                                         </p>
                                         
                                     </div>
