@@ -47,7 +47,7 @@ class LineChart extends Component
             array_push($this->resultCount , $value['minute_count']);
         }
 // dd($this->result, $this->resultCount);
-        // $this->totalVehicles = array_sum($this->resultCount);
+        $this->totalVehicles = array_sum($this->resultCount);
 
 
         //bus data
@@ -73,6 +73,10 @@ class LineChart extends Component
             }
         }
         $this->totalCars = array_sum($this->carCount);
+
+
+
+        
 
         //
         foreach($val as $value){
